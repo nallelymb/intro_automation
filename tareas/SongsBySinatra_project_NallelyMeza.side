@@ -1,0 +1,492 @@
+{
+  "id": "3ca13ae7-7016-4240-be00-5b51b84fbc90",
+  "name": "SongsBySinatra_project",
+  "url": "http://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "99f2c268-93d7-4275-8eb6-2d0d454d60bb",
+    "name": "CP01_Log in",
+    "commands": [{
+      "id": "772dd7fa-43ef-49e7-a377-050b4c72bf25",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "6de9975a-5232-4004-8246-aee1a175b512",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=footer > a",
+      "value": "32,6"
+    }, {
+      "id": "82f1aab3-400c-401e-b73a-a4384613b296",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=username",
+      "value": "username"
+    }, {
+      "id": "6f11b4a8-3815-4ab1-bd3d-4512c0a27549",
+      "comment": "",
+      "command": "clickAt",
+      "target": "name=username",
+      "value": ""
+    }, {
+      "id": "837e46ef-18cd-4b0e-8b57-82f2eb1ce6c9",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "value": "frank"
+    }, {
+      "id": "0e698351-e883-4400-9ba5-05869adb4da1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=password",
+      "value": "password"
+    }, {
+      "id": "84a9e7d9-68a7-4f46-963e-1f3f1225f2b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "value": "sinatra"
+    }, {
+      "id": "51d5bc4f-7477-42a4-b2db-5196b06c973f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input[type=\"submit\"]",
+      "value": "32,10"
+    }, {
+      "id": "01d0a165-746b-4cd7-b50b-dc9fc4c96ca8",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=input[type=\"submit\"]",
+      "value": "32,10"
+    }, {
+      "id": "6fd7b966-0114-4dd0-819b-61af86711efb",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=flash",
+      "value": "You are now logged in as frank"
+    }]
+  }, {
+    "id": "240bfc82-2978-46ba-840c-cffa5f8bf776",
+    "name": "CP02_Crear canción",
+    "commands": [{
+      "id": "b91f9b92-9997-419f-a27c-2bd31469eb7e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "3f425844-20f7-480b-8e93-30b19944f586",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a[title=\"Songs\"]",
+      "value": "36,21"
+    }, {
+      "id": "f8b6739d-596f-49f4-b94b-0641f96f520c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"Songs\"]",
+      "value": "36,21"
+    }, {
+      "id": "4364b576-ae92-4446-8239-021afeeee39e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=section.main.content > a",
+      "value": "Create a new song"
+    }, {
+      "id": "09b72a0b-c48e-4338-a716-0bfcfa77d0e1",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=section.main.content > a",
+      "value": "111,9"
+    }, {
+      "id": "6ac2bdc0-5231-41ae-a5f0-95e627dfbe67",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=title",
+      "value": "song [title]"
+    }, {
+      "id": "1f923a18-0b8f-47ed-b7a1-dd6d363739e5",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=title",
+      "value": "83,3"
+    }, {
+      "id": "9fe80da7-da7b-48b1-951f-1fa5725c9a38",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "value": "Test_1_NMB"
+    }, {
+      "id": "d5fe7adc-9cb5-403d-b9c2-8f22755aee73",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=length",
+      "value": "song [length]"
+    }, {
+      "id": "fa9a2d8c-2f71-42c2-bae1-d8f77a6a2bdb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=length",
+      "value": ""
+    }, {
+      "id": "d0074073-818a-44ed-a287-46d251c95ebd",
+      "comment": "",
+      "command": "type",
+      "target": "id=length",
+      "value": "10"
+    }, {
+      "id": "e6d3cb3f-db54-40cb-b55d-3f82652074ec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=released_on",
+      "value": ""
+    }, {
+      "id": "77ee0837-e83f-464a-a78d-99adb0988861",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=released_on",
+      "value": ""
+    }, {
+      "id": "b4b9cd02-7f5f-46ba-9870-81a0c7cfd530",
+      "comment": "",
+      "command": "type",
+      "target": "id=released_on",
+      "value": "07/11/2018"
+    }, {
+      "id": "9f5a0b31-3bb3-4ba6-b0d4-bbc26956459e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=lyrics",
+      "value": ""
+    }, {
+      "id": "73ef2b76-1e04-4c2a-948e-cad508e74e99",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=lyrics",
+      "value": "85,18"
+    }, {
+      "id": "6092402a-8881-4616-9e47-f493edd01fb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=lyrics",
+      "value": "uno dos tres cuatro"
+    }, {
+      "id": "8a1d986a-14d9-4d8d-b2ba-efe39e0821a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input[type=\"submit\"]",
+      "value": ""
+    }, {
+      "id": "6f7045f5-6162-45a9-b3f2-e6465e79e242",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=input[type=\"submit\"]",
+      "value": "40,9"
+    }, {
+      "id": "1fb7deff-826b-4f4f-ad7f-de1d01292306",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=flash",
+      "value": "Song successfully added"
+    }, {
+      "id": "760c915e-de8a-430c-87af-bd81e46e501a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"Home\"]",
+      "value": ""
+    }]
+  }, {
+    "id": "b7c86ee6-411a-41c9-86f9-d0bfda80e20b",
+    "name": "CP03_Modificar canción",
+    "commands": [{
+      "id": "d9c4266e-4025-474d-904d-5cef915e4eaa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "26089b61-ea69-416a-851f-a6ae324387eb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a[title=\"Songs\"]",
+      "value": ""
+    }, {
+      "id": "4c56c241-a0f9-45ff-83c2-2f9d08a51fbb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"Songs\"]",
+      "value": "18,23"
+    }, {
+      "id": "3b617fd5-4dae-4059-a819-80178189206e",
+      "comment": "",
+      "command": "assertText",
+      "target": "//a[contains(text(),'Test_1_NMB')]",
+      "value": ""
+    }, {
+      "id": "54ec588e-f4df-433d-b022-265cea8d6a66",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'Test_1_NMB')]",
+      "value": "39,3"
+    }, {
+      "id": "2aaee46c-8412-43e6-90cc-922d2e08f757",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[contains(text(),'edit this song')]",
+      "value": ""
+    }, {
+      "id": "b6bbeaa7-9e40-401b-9fdd-597d13d0c6c5",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'edit this song')]",
+      "value": "51,9"
+    }, {
+      "id": "00b56d48-efa2-473e-bed3-dcc59241c3a5",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=title",
+      "value": "80,12"
+    }, {
+      "id": "a0434dba-c7a2-4aa6-94b6-1529ba69f6c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "value": "Test_1_NMB_1"
+    }, {
+      "id": "295507f3-598c-4fc5-91ba-aac35b3d4811",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=input[type=\"submit\"]",
+      "value": "30,7"
+    }, {
+      "id": "9d9e7f1d-27b9-4d71-b0bf-c97e6d8076ad",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=flash",
+      "value": "Song successfully updated"
+    }]
+  }, {
+    "id": "6fa5d787-fd5f-46b4-a26c-93bd63900a46",
+    "name": "CP04_Borrar canción",
+    "commands": [{
+      "id": "b0fc9898-40ec-4285-85df-26021dfd9142",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": "css=a[title=\"Home\"]"
+    }, {
+      "id": "e469f187-dd27-46d0-a0a8-b6faea593d5f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"Songs\"]",
+      "value": "24,13"
+    }, {
+      "id": "b556c308-1c40-4b6a-b136-8308bd7cb1cc",
+      "comment": "",
+      "command": "clickAt",
+      "target": "//a[contains(text(),'Test_1_NMB_1')]",
+      "value": "52,11"
+    }, {
+      "id": "df4dd872-6342-4900-afb7-1f4f506734e7",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=section.main.content > form > input[type=\"submit\"]",
+      "value": "72,12"
+    }, {
+      "id": "9b4162e9-6175-4121-b6e0-fdd3deb2f5fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=flash",
+      "value": "Song deleted"
+    }]
+  }, {
+    "id": "8ed4bae8-948c-4ea8-94e9-dd11623d6ea7",
+    "name": "CP05_Enviar mensaje al admin",
+    "commands": [{
+      "id": "798fa243-8c53-46ba-84e2-ebcf897fdf60",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "6be66155-f67f-4f4d-8ffc-a69ca7431d62",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"Contact\"]",
+      "value": "40,17"
+    }, {
+      "id": "b983f616-4451-4fb5-8d6d-e02730fe16a4",
+      "comment": "",
+      "command": "clickAt",
+      "target": "name=name",
+      "value": "65,8"
+    }, {
+      "id": "842edbc2-f86b-4f79-a679-504df49e472e",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "value": "Nallely Meza"
+    }, {
+      "id": "03ab8224-52a7-4159-b2c1-45088fdd326f",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "value": "nallely.mb@gmail.com"
+    }, {
+      "id": "ce7db50d-f7bd-4ee9-9c4d-9814957549bd",
+      "comment": "",
+      "command": "type",
+      "target": "name=message",
+      "value": "test 2"
+    }, {
+      "id": "001e3f92-05b4-4d79-915c-29c6ffe89b7b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=input[type=\"submit\"]",
+      "value": "30,2"
+    }, {
+      "id": "68f8cecf-a53e-4689-92a4-6e6bdb393f2d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=flash",
+      "value": "Thank you for your message. We'll be in touch soon."
+    }]
+  }, {
+    "id": "0a26c2b6-61e4-4173-b60f-1cb5bc481b78",
+    "name": "CP06_Navegar por los menús",
+    "commands": [{
+      "id": "48616e60-2333-4040-9d99-d99811ad6e3a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "14e3972c-b936-41eb-81ca-0f14966a7b83",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "value": "Welcome to this website all about the songs of the great Frank Sinatra"
+    }, {
+      "id": "f410cfb7-f06a-4be5-89ad-c40d9a80a8b2",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"About\"]",
+      "value": "25,17"
+    }, {
+      "id": "eaa24bf4-6223-49b6-aae2-f03af5cf3c18",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "value": "This site is a demonstration of how to build a website using Sinatra."
+    }, {
+      "id": "b8a183f1-465d-4fcc-8c7d-d55cfa941294",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"Contact\"]",
+      "value": "23,19"
+    }, {
+      "id": "63e5c057-414e-479f-bb3f-f6acebccd5d3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "value": "You can contact me by filling in the form below:"
+    }, {
+      "id": "e8d7f43b-1f6a-45e4-90ea-ede195c52d2f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=a[title=\"Songs\"]",
+      "value": "27,21"
+    }, {
+      "id": "29c3fce9-2029-4c97-90e1-98993b805b61",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=section.main.content > h1",
+      "value": "Songs"
+    }, {
+      "id": "2743a754-cc00-4b8a-a013-11f985310476",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=section.main.content > a",
+      "value": "Create a new song"
+    }]
+  }, {
+    "id": "315d9a5d-c5f1-48e8-bc35-7e85fed94758",
+    "name": "CP08_Iniciar sesión con contraseña incorrecta",
+    "commands": [{
+      "id": "e4351641-86f6-4d38-a3fa-c3b66285a2cd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "8bf1c25a-9038-4718-a322-2319012a838d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=footer > a",
+      "value": "27,12"
+    }, {
+      "id": "3df02d6f-a80d-4967-a670-aad63d10089a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=username",
+      "value": "52,13"
+    }, {
+      "id": "ac52b177-ce5b-4aa3-a4e1-7b422dbdadff",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "value": "frank"
+    }, {
+      "id": "ab927374-5abb-4eaa-87b2-c29370be3d50",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "value": "sinatre"
+    }, {
+      "id": "63453b32-180b-4d94-97b2-38e327cdaea9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "304841fc-3c02-4ab2-af6d-5475a3d2c5d4",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=flash",
+      "value": "The username or password you entered are incorrect"
+    }]
+  }, {
+    "id": "703b5382-0818-43c5-a710-6df0f8c2c5aa",
+    "name": "CP07_Log out",
+    "commands": [{
+      "id": "095efac0-a26f-4752-9987-88f16ac46d34",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "value": ""
+    }, {
+      "id": "2d960332-f3ec-4c73-ae3c-13b1ee7647bc",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=footer > a",
+      "value": "33,10"
+    }, {
+      "id": "64f0b7a0-83d3-4565-ba6c-253e7f8fee49",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=flash",
+      "value": "You have now logged out"
+    }]
+  }],
+  "suites": [{
+    "id": "5038aa8d-28cb-4bf6-a36a-41346869d876",
+    "name": "Default Suite",
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["99f2c268-93d7-4275-8eb6-2d0d454d60bb", "240bfc82-2978-46ba-840c-cffa5f8bf776", "b7c86ee6-411a-41c9-86f9-d0bfda80e20b", "8ed4bae8-948c-4ea8-94e9-dd11623d6ea7", "0a26c2b6-61e4-4173-b60f-1cb5bc481b78", "315d9a5d-c5f1-48e8-bc35-7e85fed94758", "703b5382-0818-43c5-a710-6df0f8c2c5aa"]
+  }],
+  "urls": ["http://songs-by-sinatra.herokuapp.com/"],
+  "plugins": [],
+  "version": "1.0"
+}
